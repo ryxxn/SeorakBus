@@ -1,0 +1,60 @@
+.cardsContainer{
+    width: 100%;
+    /* height: calc(100% - 120px - 72px); */
+}
+
+.stationInfomationContainer{
+    width: 100%;
+    padding: 16px 0;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 72px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.stationInfomationBox {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: white;
+}
+
+.station {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.stationChangeButton{
+    font-size: 24px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border:none;
+    background-color: transparent;
+}
+
+.station p,
+.station h2 {
+    margin: 0;
+}
+
+.previewBusButton{
+    width: 100%;
+    height: 72px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 24px;
+    background-color: white;
+}
