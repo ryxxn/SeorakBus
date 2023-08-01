@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { BusTable } from './components/BusTable';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header>
+        <h1>{"설악 - 잠실 버스"}</h1>
       </header>
+      <BusTable />
+      <footer>
+        <p>Copyright © dochi</p>
+        <address>사이트 문의 : dochi00@gmail.com</address>
+      </footer>
     </div>
   );
 }
