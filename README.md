@@ -23,6 +23,7 @@
 
 ## 라이브러리
 - React
+- axios
 - react-icons
 
 
