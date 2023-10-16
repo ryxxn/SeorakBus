@@ -6,7 +6,7 @@
 
 또는 다음 QR 코드를 통해 접속할 수 있습니다.
 
-![image](https://github.com/ryxxn/SeorakBus/assets/88328436/1379d221-3059-48ea-a783-c9f8e3c7d2e0)
+![image](https://github.com/ryxxn/SeorakBus/assets/88328436/4647a7b6-6c4d-4d0d-9c2a-45c083028044)
 
 
 # 웹사이트 화면 
