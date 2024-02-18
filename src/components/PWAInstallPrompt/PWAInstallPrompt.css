@@ -1,0 +1,36 @@
+.pwaInstallPrompt {
+    width: 100%;
+    max-width: 500px;
+    height: 72px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-out;
+    box-sizing: border-box;
+    padding: 0 16px;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, .25);
+    z-index:999999;
+}
+
+.pwaInstallPrompt img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #000;
+}
+
+.pwaInstallPrompt p {
+    color: #333;
+    cursor: pointer;
+}
+
+.visible {
+    transform: translateY(0);
+}
+
+.hidden {
+    transform: translateY(100%);
+}
