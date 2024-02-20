@@ -1,0 +1,76 @@
+.mainHeader {
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  height: 72px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
+  border-bottom: 16px solid #eaeaea;
+  gap: 8px;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  overflow-x: hidden;
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .dayKindChangeButton {
+    font-size: 13px;
+    // color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+  }
+
+  .dayKind {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  .dayKind[data-daykind='0'] {
+    color: gray;
+  }
+
+  .dayKind[data-daykind='1'] {
+    color: rgb(255, 100, 100);
+  }
+
+  .dayKind[data-daykind='2'] {
+    color: rgb(75, 75, 255);
+  }
+}
+
+.dayKindButtonsBox {
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  .dayKindButton {
+    all: initial;
+    width: 200px;
+    // background-color: rgb(75, 75, 255);
+    border: 1.5px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    // color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    &:disabled {
+      background-color: #ddd;
+      opacity: 0.4;
+    }
+  }
+}

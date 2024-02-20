@@ -1,0 +1,110 @@
+.cardsContainer {
+  width: 100%;
+}
+
+.stationInfomationContainer {
+  width: 100%;
+  max-width: 500px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 72px;
+  z-index: 999;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  .stationInfomationBox {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    margin-top: 0;
+    border-radius: 8px;
+  }
+}
+
+.station {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.stationChangeButton {
+  font-size: 24px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: none;
+  background-color: transparent;
+}
+
+.station p,
+.station h2 {
+  margin: 0;
+}
+
+.previewBusButton {
+  width: 100%;
+  height: 72px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 20px;
+  background-color: #fff;
+  border: 0.5px solid #ddd;
+  box-shadow: 0 0 0 0.5px #ddd;
+}
+
+.realTimeBusInfoBox {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  .realTimeBusInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+
+    p {
+      margin: 0;
+      height: 60px;
+      border-top: 1px solid #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timeInfo {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 16px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .arrivalInfo {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 16px;
+      box-sizing: border-box;
+      border-top: none;
+    }
+  }
+}
