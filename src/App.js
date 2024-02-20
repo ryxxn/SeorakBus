@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BusTable } from './components/BusTable/BusTable';
 import { Header } from './components/Header/Header';
 import { Container } from './layouts/Container/Container';
