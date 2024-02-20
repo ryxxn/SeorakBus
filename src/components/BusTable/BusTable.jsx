@@ -27,8 +27,8 @@ export const BusTable = () => {
     // 출발지 바꾸기 버튼 클릭 함수
     const handleStationChange = () => {
         setIsSeolak(!isSeolak);
-        setIsLoading(true);
         setIsClosed(false);
+        setIsLoading(true);
     }
 
     // 이전 시간표 보기 활성화 버튼 클릭 함수
@@ -68,7 +68,6 @@ export const BusTable = () => {
     }
 
     const updateData = () => {
-
         // 실시간 도착 정보
         fetchData(isSeolak).then((response) => {
             if (response.data === "버스 정보 없음") {
@@ -105,7 +104,12 @@ export const BusTable = () => {
         // 스크롤 위치 정상화
         window.scrollTo(0, 0);
 
-        if (isClosed) return
+        if (isClosed) {
+            setIsLoading(false);
+            return;
+        };
+
+        updateData();
 
         // 1분마다 실시간 버스 정보 및 시간표 업데이트
         const intervalId = setInterval(() => {
@@ -120,7 +124,7 @@ export const BusTable = () => {
             clearInterval(intervalId);
         })
 
-    }, [isSeolak])
+    }, [isSeolak, dayKind])
 
     // 버스 데이터가 전체로 보여지면 scroll 조정하기
     useEffect(() => {
@@ -138,10 +142,6 @@ export const BusTable = () => {
             );
         }
     }, [fullData, isPreview])
-
-    useEffect(() => {
-        updateTimeTable();
-    }, [dayKind])
 
     const tableData = isPreview ? fullData : fullData.slice(currentTimeIndex);
 
@@ -174,7 +174,7 @@ export const BusTable = () => {
                         :
                         <p className='arrivalInfo'>
                             <span>다음 버스 도착 정보</span>
-                            {!realTimeBusData.length && <span>없음</span>}
+                            {(!realTimeBusData.length && !isLoading) && <span>없음</span>}
                         </p>
                     }
                     {isLoading ?
