@@ -1,0 +1,52 @@
+.card {
+    width: 100%;
+    height: 124px;
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+    border: 0.5px solid #DDD;
+    box-shadow: 0 0 0 0.5px #DDD;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card .busBox,
+.card .timeBox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.card .busBox p:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+/* .card .busBox p:nth-child(2) {
+} */
+
+.card .timeBox p:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .timeBox p:nth-child(2) {
+    color: blue;
+    font-size: 14px;
+}
+
+.card[data-state=disable] {
+    background-color: #eaeaea;
+}
+
+.card[data-state=disable] p {
+    color: gray !important;
+}
