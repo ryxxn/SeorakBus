@@ -69,25 +69,29 @@ export const BusTable = () => {
 
     const updateData = () => {
         // 실시간 도착 정보
-        fetchData(isSeolak).then((response) => {
-            if (response.data === "버스 정보 없음") {
-                console.log(response.data);
-                setIsLoading(false);
-                setRealTimeBusData([]);
-            }
-            else if (response.data.includes("데이터 요청 실패")) {
-                console.log(response.data);
+        fetchData(isSeolak)
+            .then((response) => {
+                if (response.data === "버스 정보 없음") {
+                    console.log(response.data);
+                    setIsLoading(false);
+                    setRealTimeBusData([]);
+                }
+                else if (response.data.includes("데이터 요청 실패")) {
+                    console.log(response.data);
 
-            }
-            else if (response.data === "에러") {
-                console.log(response.data);
-            }
-            else {
+                }
+                else if (response.data === "에러") {
+                    console.log(response.data);
+                }
+                else {
+                    setIsLoading(false);
+                    setRealTimeBusData(response.data);
+                }
+            })
+            .finally(() => {
                 setIsLoading(false);
-                setRealTimeBusData(response.data);
-            }
-        });
-        setIsLoading(false)
+            });
+
     }
 
     useEffect(() => {
