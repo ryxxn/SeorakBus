@@ -1,72 +1,36 @@
-# Getting Started with Create React App
+## [설악버스](https://seorakbus.web.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. 서비스 개요
+   
+[https://seorakbus.web.app](https://seorakbus.web.app)
+   
+ 가평 설악 <-> 서울 잠실 간 광역 버스를 한 눈에 보기 편하도록 만든 버스 시간표 웹앱입니다.
+ PWA 프롬프트를 추가해 홈화면에 쉽게 추가할 수 있습니다.
+ 실시간 버스 도착 정보를 연동해 쉽게 확인할 수 있습니다.
 
-## Available Scripts
+## 2. 주요 기능
+  - 평일, 토요일 및 공휴일, 일요일 시간표 선택 기능
+  - 설악 -> 잠실, 잠실 -> 설악 선택 기능
+  - 이전 버스 보기 기능
 
-In the project directory, you can run:
+## 3. 화면
 
-### `npm start`
+### 1. 시간표 선택 모달
+<img src="https://github.com/ryxxn/SeorakBus/assets/88328436/4b6a4ab4-45c2-4f1a-b41d-af8c2d1648cb" alt="" width="200" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. 이전 버스 보기
+<img src="https://github.com/ryxxn/SeorakBus/assets/88328436/aa38a9a4-11c5-4234-8dbf-97eddd7d819f" alt="" width="200" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. PWA Prompt
+<img src="https://github.com/ryxxn/SeorakBus/assets/88328436/b0a0cbd9-fa92-4ef4-947c-036e530cc60d" alt="" width="200" />
 
-### `npm test`
+## 4. 개발 기간
+   - 2023.08.01 ~ 2023.08.02
+   - 2024.02.22 ~ 2024.02.25 시간표 변경에 따른 데이터 최신화 및 UI 개선
+     
+## 5. 개발 스택
+   - React
+   - zustand
+   - Sass
+   - Firebase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# SeorakBus
-# SeorakBus
