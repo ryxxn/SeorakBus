@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'LINESeedKR-Bd';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2')
-    format('woff2');
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 * {
-  font-family: 'LINESeedKR-Bd';
+  font-family: "LINESeedKR-Bd";
 }
 
 body {
@@ -16,6 +16,16 @@ body {
   width: 100%;
   min-height: 100vh;
   padding-left: calc(50% - 500px / 2);
+
+  // hide scrollbar
+  /* Chrome, Edge, Safari 등의 WebKit 기반 브라우저 */
+  &::-webkit-scrollbar {
+    display: none; /* 스크롤바를 숨김 */
+    /* Firefox */
+    scrollbar-width: none; /* 스크롤바를 숨김 */
+    /* IE, Edge(구버전) */
+    -ms-overflow-style: none; /* 스크롤바를 숨김 */
+  }
 }
 
 .container {
