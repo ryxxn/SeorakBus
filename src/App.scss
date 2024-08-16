@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "LINESeedKR-Bd";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
-    format("woff2");
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2')
+    format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 * {
-  font-family: "LINESeedKR-Bd";
+  font-family: 'LINESeedKR-Bd';
 }
 
 body {
@@ -37,23 +37,4 @@ body {
   align-items: center;
   padding-top: calc(72px + 120px + 16px);
   background-color: #eeeeee;
-}
-
-footer {
-  width: 100%;
-  min-height: 100px;
-  height: 100px;
-  position: relative;
-  transform: translateY(calc(-100% + 100px));
-  background-color: #333333;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-footer p {
-  margin: 0;
 }
