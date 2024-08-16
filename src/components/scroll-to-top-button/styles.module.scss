@@ -1,0 +1,28 @@
+.scrollToTopButton {
+  all: initial;
+  position: fixed;
+  z-index: 100;
+  bottom: 64px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+// container max width: 500px
+@media (max-width: 500px) {
+  .scrollToTopButton {
+    right: 16px;
+  }
+}
+
+@media (min-width: 501px) {
+  .scrollToTopButton {
+    right: calc(50vw - 250px + 16px);
+  }
+}
