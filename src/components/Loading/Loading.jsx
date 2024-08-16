@@ -1,8 +1,14 @@
-import React from 'react'
-import "./Loading.css"
+import { bindClassNames } from '@/utils';
+import styles from './styles.module.scss';
 
-export const Loading = ({ width }) => {
-    return (
-        <div id="loading" style={{ width: width }}></div>
-    )
-}
+// ----------------------------------------------------------------------
+
+const cn = bindClassNames(styles);
+
+// ----------------------------------------------------------------------
+
+const Loading = ({ width }) => {
+  return <div className={cn('loading')} style={{ width: width }}></div>;
+};
+
+export default Loading;
