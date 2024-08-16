@@ -1,16 +1,38 @@
 import './App.scss';
-import { BusTable } from './components/BusTable/BusTable';
-import { Header } from './components/Header/Header';
-import { Container } from './layouts/Container/Container';
+import { Header, Footer } from './layouts';
+import { KakaoAdfit, CoupangAds } from './components/ads';
+import { BusListSection, RealTimeInfoSection, StationInfoSection } from '@/sections';
+import { PWAInstallPrompt } from './components/pwa-install-prompt';
+import { ScrollToTopButton } from './components/scroll-to-top-button';
 
 function App() {
 
   return (
-    <Container>
+    <div className='container'>
       <Header />
-      <BusTable />
 
-    </Container>
+      {/* content */}
+      <StationInfoSection />
+      <RealTimeInfoSection />
+      <BusListSection />
+
+      <ScrollToTopButton />
+
+      {/* ads */}
+      <CoupangAds />
+      <KakaoAdfit />
+      {/* 
+        <Adsense
+          className="adsbygoogle"
+          client={process.env.REACT_APP_ADSENSE_CLIENT}
+          slot="9529818426"
+          format="auto"
+          responsive
+        /> 
+      */}
+      <Footer />
+      <PWAInstallPrompt />
+    </div>
   );
 }
 

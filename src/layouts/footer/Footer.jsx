@@ -7,8 +7,13 @@ const cn = bindClassNames(styles);
 
 // ----------------------------------------------------------------------
 
-const Loading = ({ width }) => {
-  return <div className={cn('loading')} style={{ width: width }}></div>;
+const Footer = () => {
+  return (
+    <footer className={cn('footer')}>
+      <p>Copyright © dochi</p>
+      <address>사이트 문의 : dochi00@gmail.com</address>
+    </footer>
+  );
 };
 
-export default Loading;
+export default Footer;
