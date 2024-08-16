@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export const Adsense = ({
+const Adsense = ({
   className = 'adsbygoogle',
   client = '',
   slot = '',
@@ -77,3 +77,5 @@ export const Adsense = ({
     </div>
   );
 };
+
+export default Adsense;
