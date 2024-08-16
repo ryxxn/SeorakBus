@@ -1,9 +1,9 @@
 import './App.scss';
-import { Header, Footer } from './layouts';
-import { KakaoAdfit, CoupangAds } from './components/ads';
+import { Header, Footer } from '@/layouts';
+import { KakaoAdfit, CoupangAds } from '@/components/ads';
+import { PWAInstallPrompt } from '@/components/pwa-install-prompt';
+import { ScrollToTopButton } from '@/components/scroll-to-top-button';
 import { BusListSection, RealTimeInfoSection, StationInfoSection } from '@/sections';
-import { PWAInstallPrompt } from './components/pwa-install-prompt';
-import { ScrollToTopButton } from './components/scroll-to-top-button';
 
 function App() {
 
