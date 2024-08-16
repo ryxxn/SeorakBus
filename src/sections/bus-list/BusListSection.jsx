@@ -63,6 +63,12 @@ const BusListSection = () => {
 
     if (is운행종료) return;
 
+    // 이전 버스 보기 비활성화
+    setIsPreview(false);
+
+    // 스크롤 위치 정상화
+    scrollToTop();
+
     // 1분마다 실시간 버스 정보 및 시간표 업데이트
     const intervalId = setInterval(() => {
       // 시간표 동기화
@@ -75,14 +81,6 @@ const BusListSection = () => {
     };
 
     // eslint-disable-next-line
-  }, [is설악, dayKind]);
-
-  React.useEffect(() => {
-    // 이전 버스 보기 비활성화
-    setIsPreview(false);
-
-    // 스크롤 위치 정상화
-    scrollToTop();
   }, [is설악, dayKind]);
 
   const tableData = isPreview ? fullData : fullData.slice(currentTimeIndex);
