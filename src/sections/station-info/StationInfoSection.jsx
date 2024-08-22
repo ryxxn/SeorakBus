@@ -32,6 +32,7 @@ const StationInfoSection = () => {
         <button
           onClick={handleStationChange}
           className={cn('stationChangeButton')}
+          aria-label="출발지 바꾸기"
         >
           <FaExchangeAlt />
         </button>
