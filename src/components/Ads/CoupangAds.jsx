@@ -6,9 +6,9 @@ const CoupangAds = () => {
         src="https://coupa.ng/cecqhR"
         width="120"
         height="240"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
-        referrerpolicy="unsafe-url"
+        referrerPolicy="unsafe-url"
       ></iframe>
       <iframe
         title="coupangAd2"
