@@ -17,6 +17,8 @@ body {
   min-height: 100vh;
   padding-left: calc(50% - 500px / 2);
 
+  color: #000;
+
   // hide scrollbar
   /* Chrome, Edge, Safari 등의 WebKit 기반 브라우저 */
   &::-webkit-scrollbar {
