@@ -8,27 +8,14 @@
 PWA 프롬프트를 추가해 홈화면에 쉽게 추가할 수 있습니다.
 실시간 버스 도착 정보를 연동해 쉽게 확인할 수 있습니다.
 
-## 2. 주요 기능
+## 2. 개발 스택
 
-- 평일, 토요일 및 공휴일, 일요일 시간표 선택 기능
-- 설악 -> 잠실, 잠실 -> 설악 선택 기능
-- 이전 버스 보기 기능
+- React
+- zustand
+- sass
+- firebase
 
-## 3. 화면
-
-### 1. 시간표 선택 모달
-
-<img src="https://github.com/ryxxn/SeorakBus/assets/88328436/4b6a4ab4-45c2-4f1a-b41d-af8c2d1648cb" alt="" width="200" />
-
-### 2. 이전 버스 보기
-
-<img src="https://github.com/ryxxn/SeorakBus/assets/88328436/aa38a9a4-11c5-4234-8dbf-97eddd7d819f" alt="" width="200" />
-
-### 3. PWA Prompt
-
-<img src="https://github.com/ryxxn/SeorakBus/assets/88328436/b0a0cbd9-fa92-4ef4-947c-036e530cc60d" alt="" width="200" />
-
-## 4. History
+## 3. History
 
 <ul>
 <li> 23. 8. 1 ~ 23. 8. 2 초기버전 개발 </li>
@@ -37,9 +24,11 @@ PWA 프롬프트를 추가해 홈화면에 쉽게 추가할 수 있습니다.
 <li> 24. 8.16 codebase 리팩토링 </li>
 </ul>
 
-## 5. 개발 스택
+---
 
-- React
-- zustand
-- Sass
-- Firebase
+![image](https://github.com/user-attachments/assets/3f43348a-c8e5-4a20-aeb8-764e00ed1ca6)
+![image](https://github.com/user-attachments/assets/6a589504-d798-42a1-b55a-7688a83cd3c0)
+![image](https://github.com/user-attachments/assets/37e627f5-a50e-495a-81f6-229bae5c00ed)
+
+
+
