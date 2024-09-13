@@ -8,6 +8,8 @@
 PWA 프롬프트를 추가해 홈화면에 쉽게 추가할 수 있습니다.
 실시간 버스 도착 정보를 연동해 쉽게 확인할 수 있습니다.
 
+[앱스토어 바로가기](https://weppstore.com/wepps/clzjwtzwr000074q7pypf5mzi)
+
 ## 2. 개발 스택
 
 - React
